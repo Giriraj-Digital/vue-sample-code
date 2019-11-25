@@ -1,0 +1,53 @@
+<template>
+  <v-app>
+    <v-content>
+      <v-container
+        fluid
+        fill-height>
+        <v-layout
+          align-center
+          justify-center>
+          <v-flex
+            xs12
+            sm8
+            md4>
+            <v-card class="elevation-12">
+              <v-toolbar
+                dark
+                class="toolbar__login"
+                color="info">
+                <v-toolbar-title class="white--text ">Anmeldung</v-toolbar-title>
+              </v-toolbar>
+              <v-card-text>
+                <v-form>
+                  <v-text-field
+                    prepend-icon="mdi-account"
+                    name="email"
+                    label="E-Mail"
+                    type="text"/>
+                  <v-text-field
+                    id="password"
+                    prepend-icon="mdi-lock"
+                    name="password"
+                    label="Passwort"
+                    type="password"/>
+                </v-form>
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer/>
+                <v-btn color="primary">
+                  <router-link
+                    to="/trips"
+                    class="white--text"
+                  >
+                    Anmelden
+                  </router-link>
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+  </v-app>
+</template>
